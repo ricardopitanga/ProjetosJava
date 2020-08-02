@@ -33,8 +33,8 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btnSoma" min="-2" pref="91" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-              <Component id="lblSoma" min="-2" pref="45" max="-2" attributes="0"/>
-              <EmptySpace pref="128" max="32767" attributes="0"/>
+              <Component id="lblSoma" min="-2" pref="42" max="-2" attributes="0"/>
+              <EmptySpace pref="131" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
