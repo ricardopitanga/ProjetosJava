@@ -67,7 +67,7 @@ public class TemaSoma extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(btnSoma, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(4, 4, 4)
-                .addComponent(lblSoma, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblSoma, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
                 .addContainerGap(131, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
