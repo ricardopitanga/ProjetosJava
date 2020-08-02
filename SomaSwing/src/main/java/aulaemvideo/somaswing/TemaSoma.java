@@ -36,6 +36,11 @@ public class TemaSoma extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnSoma.setText("=");
+        btnSoma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSomaActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("+");
 
@@ -60,9 +65,9 @@ public class TemaSoma extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtN2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btnSoma, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblSoma, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnSoma, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addComponent(lblSoma, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
                 .addContainerGap(134, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -74,12 +79,27 @@ public class TemaSoma extends javax.swing.JFrame {
                     .addComponent(txtN2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1)
                     .addComponent(btnSoma)
-                    .addComponent(lblSoma))
+                    .addComponent(lblSoma, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(71, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnSomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSomaActionPerformed
+        // TODO add your handling code here:
+        
+        int n1 = (Integer.parseInt(txtN1.getText()));
+        int n2 = (Integer.parseInt(txtN2.getText()));
+        if (n1 <= 0 || n2 <= 0)
+        {
+        lblSoma.setText("Informe um valor válido!");
+        }
+        else {
+        int s  = n1 + n2;
+        lblSoma.setText(Integer.toString(s));
+        }
+    }//GEN-LAST:event_btnSomaActionPerformed
 
     /**
      * @param args the command line arguments
